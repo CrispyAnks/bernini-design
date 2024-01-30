@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bernini</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="js/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script src="js/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="blurred-bg"></div>
+    <div class="container-fluid" id="main">
+        <a id="nav" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            ☰
+        </a>
+    
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">M E N U</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    The white marble has to assume the likeness of a person, it has to have color, spirit and life.
+                </div>
+                <div id="navlist" class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action">H O M E</a>
+                    <a href="work.html" class="list-group-item list-group-item-action">W O R K</a>
+                    <a href="introduction.html" class="list-group-item list-group-item-action">I N T R O</a>
+                    <a href="location.html" class="list-group-item list-group-item-action">L O C A T I O N</a>
+                </div>
+            </div>
+        </div>
+    
+        <a href="introduction.html" id="prev" class="btn navbotton">Next.</a>
+        <a href="location.html" id="next" class="btn navbotton">Prev.</a>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-8 col-lg-8 col-xl-8 intropic">
+                <img src="img\proserpina_sculpture.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4 p-4">
+                <h1 class="display-1 article">Gian Lorenzo<br> Bernini</h1>
+            </div>
+        </div>
+
+        <div class="row" id="links">
+            <div class="col-md-4 p-3"><a href="https://en.wikipedia.org/wiki/Gian_Lorenzo_Bernini" class="btn btn-info linkbtn">W I K I</a></div>
+            <div class="col-md-4 p-3"><a href="https://www.wikiart.org/en/gian-lorenzo-bernini" class="btn btn-info linkbtn">G A L L E R Y</a></div>
+            <div class="col-md-4 p-3"><a href="https://galleriaborghese.beniculturali.it/en/exhibition/bernini/" class="btn btn-info linkbtn">M U S E U M</a></div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

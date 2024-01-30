@@ -1,0 +1,145 @@
+
+body {
+    background-image: url('../img/proserpina_sculpture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+.navbotton{
+    position: fixed;
+    background-color: antiquewhite;
+    top:50%;
+    height: 150px;
+    width: 100px;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.blurred-bg {
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.199); 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbotton:hover{
+    background-color: black;
+    color: white;
+}
+
+#nav{
+    position: fixed;
+    top: 20px;
+    background-color:antiquewhite;
+    border-color: antiquewhite;
+    color:dimgrey;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 2;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#nav:hover{
+    background-color:rgba(243, 224, 224, 0.315);
+    color:antiquewhite;
+    border-color: dimgray;
+}
+
+#nav:active{
+    background-color:rgba(105, 105, 105, 0.39);
+    color:antiquewhite;
+}
+
+#navlist{
+    margin-top: 20px;
+}
+
+#prev{
+    right: 0px;
+    border-radius: 20px 1px 1px 20px;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#next{
+    left:0px;
+    border-radius: 1px 20px 20px 1px;
+    padding: 60px 20px;
+}
+
+
+#locmain{
+    position: relative;
+    margin: 100px 100px 0px;
+}
+
+.map{
+    position: relative;
+}
+
+.map img{
+    width: 100%;
+    min-width: 100px;
+    height: auto;
+}
+
+.mybtn{
+    position: absolute;
+    background-color: brown;
+    box-shadow: 2px 3px rgba(0, 0, 0, 1);
+    opacity: 1;
+}
+
+.mybtn:hover{
+    background-color: brown;
+}
+
+#map1{
+    top: 5%;
+    left: 73%;
+}
+
+#map2{
+    top: 25%;
+    left: 63%;
+}
+
+#map3{
+    top: 35%;
+    left: 23%;
+}
+
+#locintro{
+    text-align: center;
+    border: 2px solid #f3ecc3;
+    border-image: linear-gradient(to right, #77777788 0%, antiquewhite 100%);
+    border-image-slice: 1;
+    padding: 1rem;
+    background-color: #77777727;
+}
+
+@media (max-width:992px) {
+    #locintro{
+        margin-top: 30px;
+    }
+}
+
+.article{
+    display: none;
+}
+
+#article0{
+    display: block;
+}

@@ -1,0 +1,241 @@
+
+body {
+    background-image: url('../img/proserpina_sculpture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+.navbotton{
+    position: fixed;
+    background-color: antiquewhite;
+    top:50%;
+    height: 150px;
+    width: 100px;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.blurred-bg {
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.199); 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbotton:hover{
+    background-color: black;
+    color: white;
+}
+
+#nav{
+    position: fixed;
+    top: 20px;
+    background-color:antiquewhite;
+    border-color: antiquewhite;
+    color:dimgrey;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 2;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#nav:hover{
+    background-color:rgba(243, 224, 224, 0.315);
+    color:antiquewhite;
+    border-color: dimgray;
+}
+
+#nav:active{
+    background-color:rgba(105, 105, 105, 0.39);
+    color:antiquewhite;
+}
+
+#navlist{
+    margin-top: 20px;
+}
+
+#prev{
+    right: 0px;
+    border-radius: 20px 1px 1px 20px;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#next{
+    left:0px;
+    border-radius: 1px 20px 20px 1px;
+    padding: 60px 20px;
+}
+
+#intromain{
+    position: relative;
+    top:100px;
+    box-sizing: border-box;
+    color: #222222;
+    padding: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 80vh;
+    overflow-y: scroll;
+    margin: 0px 100px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+
+
+  
+.timeline {
+    position: relative;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1300px;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      border: 1px solid #c7bfa8;
+      right: 40px;
+      top: 0;
+    }
+    
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    @media screen and (min-width: 700px) {
+      padding: 2rem;
+      &:before {
+        left: calc(50% - 1px);
+        right: auto;
+      }
+    }
+}
+  
+.timeline__item {
+    
+    padding: 1rem;
+    border: 2px solid #f3ecc3;
+    border-image: linear-gradient(to right, #77777788 0%, antiquewhite 100%);
+    border-image-slice: 1;
+    position: relative;
+    margin: 1rem 3rem 1rem 1rem;
+    clear: both;
+    
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+    }
+    
+    &:before {
+      right: -10px;
+      top: calc(50% - 5px);
+      border-style: solid;
+      border-color: antiquewhite #77777788 transparent transparent;
+      border-width: 10px;
+      transform: rotate(45deg);
+    }
+    
+    @media screen and (min-width: 700px) {
+      width: 44%;
+      margin: 1rem;
+      
+      &:nth-of-type(2n) {
+        float: right;
+        margin: 1rem;
+        border-image: linear-gradient(to right, #77777788 0%, antiquewhite 100%);
+        border-image-slice: 1;
+  
+        &:before {
+          right: auto;
+          left: -10px;
+            border-color:transparent transparent antiquewhite #77777788;
+        }
+      }
+    }
+}
+  
+.timeline__item--year {
+        border: 2px solid antiquewhite;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 150px;
+        margin: 0 48px 0 auto;
+        font-size: 1.8rem;
+        background-color: antiquewhite;
+        border-image: linear-gradient(to right, #77777788 0%, antiquewhite 100%);
+        border-image-slice: 1;
+        line-height: 1;
+        border-image: none;
+        padding: .5rem 1rem 1rem;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+    
+    &:before {
+      display: none;
+    }
+    
+    @media screen and (min-width: 700px) {
+      text-align: center;
+        margin: 0 auto;
+      
+      &:nth-of-type(2n) {
+        float: none;
+        margin: 0 auto;
+        border-image: none;
+    
+        &:before {
+          display: none;
+        }
+      }
+    }
+}
+  
+.timeline__title {
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+}
+  
+.timeline__blurb {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: .5rem 0 0;
+}
+
+.portrait{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+#profile{
+    margin: 30px;
+}
+
+#name{
+    padding: 30px 0;
+}

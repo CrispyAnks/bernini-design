@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bernini</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="js/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/work.css" rel="stylesheet">
+  <script src="js/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="blurred-bg"></div>
+    <div class="container-fluid" id="main">
+        <a id="nav" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            ☰
+        </a>
+    
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">M E N U</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    The white marble has to assume the likeness of a person, it has to have color, spirit and life.
+                </div>
+                <div id="navlist" class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action">H O M E</a>
+                    <a href="work.html" class="list-group-item list-group-item-action">W O R K</a>
+                    <a href="introduction.html" class="list-group-item list-group-item-action">I N T R O</a>
+                    <a href="location.html" class="list-group-item list-group-item-action">L O C A T I O N</a>
+                </div>
+            </div>
+        </div>
+    
+        <a href="location.html" id="prev" class="btn navbotton">Next.</a>
+        <a href="introduction.html" id="next" class="btn navbotton">Prev.</a>
+
+        <div id="workmain" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-6 col-xxl-5">
+                            <img src="./img/pic1.png" class="d-block">
+                        </div>
+                        <div class="col-lg-4 col-xl-6 col-xxl-7">
+                            <div class="description">
+                                <h3>Description 1</h3>
+                                <p>This is the description for Image 1.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-6 col-xxl-5">
+                            <img src="./img/pic2.png"class="d-block">
+                        </div>
+                       <div class="col-lg-4 col-xl-6 col-xxl-7">
+                            <div class="description">
+                                <h3>Description 2</h3>
+                                <p>This is the description for Image 2.</p>
+                            </div>
+                       </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-6 col-xxl-5">
+                            <img src="./img/pic3.png" class="d-block">
+                        </div>
+                        <div class="col-lg-4 col-xl-6 col-xxl-7">
+                            <div class="description">
+                                <h3>Description 3</h3>
+                                <p>This is the description for Image 1.</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#workmain" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#workmain" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+    </div>
+
+</body>
+</html>

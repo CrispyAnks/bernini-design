@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bernini</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="js/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/loc.css" rel="stylesheet">
+  <script src="js/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="blurred-bg"></div>
+    <div class="container-fluid" id="main">
+        <a id="nav" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            ☰
+        </a>
+    
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">M E N U</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    The white marble has to assume the likeness of a person, it has to have color, spirit and life.
+                </div>
+                <div id="navlist" class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action">H O M E</a>
+                    <a href="work.html" class="list-group-item list-group-item-action">W O R K</a>
+                    <a href="introduction.html" class="list-group-item list-group-item-action">I N T R O</a>
+                    <a href="location.html" class="list-group-item list-group-item-action">L O C A T I O N</a>
+                </div>
+            </div>
+        </div>
+    
+        <a href="index.html" id="prev" class="btn navbotton">Next.</a>
+        <a href="work.html" id="next" class="btn navbotton">Prev.</a>
+
+        <div class="row" id="locmain">
+            <div class="col-lg-6 map">
+                <img src="./img/rome-map-4.jpg">
+                <div class="buttons">
+                    <button class="btn btn-close mybtn" id="map1" onclick="mapClick('map1', 'article1')"></button>
+                    <button class="btn btn-close mybtn" id="map2" onclick="mapClick('map2', 'article2')"></button>
+                    <button class="btn btn-close mybtn" id="map3" onclick="mapClick('map3', 'article3')"></button>
+                </div>
+            </div>
+            <div class="col-lg-6" id="locintro">
+                <div class="articles">
+                    <div id="article0" class="article">
+                        <h1>Intro</h1>
+                        intro内容<br>
+                        intro内容<br>
+                        intro内容<br>
+                        intro内容<br>
+                        intro内容<br>
+                        intro内容<br>
+                        intro内容<br>
+                        intro内容<br>
+                        intro内容<br>
+                    </div>
+                    <div id="article1" class="article">
+                        <h1>Location name</h1>
+                        文章1内容
+                    </div>
+                    <div id="article2" class="article">
+                        <h1>Location name</h1>
+                        文章2内容
+                    </div>
+                    <div id="article3" class="article">
+                        <h1>Location name</h1>
+                        文章3内容
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
